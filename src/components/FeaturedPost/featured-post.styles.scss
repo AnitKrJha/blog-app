@@ -1,0 +1,91 @@
+.mainpost-container {
+  width: 100%;
+  background-color: #1e283a;
+  padding: 18px;
+  border-radius: 11px;
+  margin-top: 1rem;
+  display: flex;
+  gap: 35px;
+  max-height: 380px;
+  margin-bottom: 1rem;
+
+  .mainpost-image {
+    img {
+      width: 100%;
+      mix-blend-mode: lighten;
+    }
+    .mainpost-image2 {
+      backdrop-filter: blur(10px);
+      background: transparent;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+    display: flex;
+    align-items: center;
+    border-radius: 11px;
+    overflow: hidden;
+    background: url("https://c4.wallpaperflare.com/wallpaper/437/100/1016/dark-blue-blur-gradation-wallpaper-preview.jpg")
+      no-repeat center;
+
+    background-size: cover;
+  }
+
+  .mainpost-content {
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    gap: 12px;
+    flex-direction: column;
+    padding-bottom: 2rem;
+
+    .content-date {
+      color: #8e8686;
+      font-weight: 300;
+      font-size: 0.9rem;
+    }
+    .content-heading {
+      font-size: 1.5rem;
+      text-transform: capitalize;
+      font-weight: 600;
+      line-height: 30px;
+      max-height: 92px;
+      overflow-y: hidden;
+    }
+    .content-glimpse {
+      font-size: 0.95rem;
+      line-height: 20px;
+      max-height: 152px;
+      overflow-y: hidden;
+
+      color: #9e9494;
+    }
+    .content-tags {
+      display: flex;
+      flex-wrap: wrap;
+      position: absolute;
+      bottom: 0px;
+      gap: 0.8rem;
+      .tags {
+        font-style: italic;
+        font-weight: 500;
+        font-size: 0.9rem;
+      }
+      .tag {
+        font-size: 0.8rem;
+
+        background-color: #5082e2;
+        padding-inline: 0.5rem;
+        border-radius: 5px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .mainpost-container {
+    flex-direction: column;
+    max-height: none;
+  }
+}

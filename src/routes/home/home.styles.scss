@@ -1,0 +1,20 @@
+.main-content {
+  max-width: 1400px;
+  margin-top: 2.5rem;
+  margin-inline: auto;
+  padding-inline: 2rem;
+  .latest-heading {
+    font-weight: 500;
+    position: relative;
+    font-size: 1.5rem;
+  }
+  .heading-underline {
+    width: 80%;
+    position: absolute;
+    height: 3px;
+    bottom: 0px;
+    left: 10%;
+    border-radius: 10px;
+    background-color: #5082e2;
+  }
+}
